@@ -23,12 +23,12 @@ function Understanding(){
 
     return(<>
         <div>
-        <h1>How well are you understanding the content?</h1>
+        <h1 class='heading'>How well are you understanding the content?</h1>
         <br />
             <form onSubmit={saveNumber}>
-                <label>Understanding?</label>
-                <input type='number' value={understanding} min='1' max='5' onChange={(event => setUnderstanding(event.target.value))}/>
-                <button type="submit">NEXT</button>
+                <label class='smallTag'>Understanding? ( 1-5 )</label>
+                <input class='inputSpace' type='number' value={understanding} min='1' max='5' onChange={(event => setUnderstanding(event.target.value))}/>
+                <button class='button' type="submit">NEXT</button>
             </form>
         </div>
     </>)

@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #033076;
+  background-image: linear-gradient(rgb(34, 34, 190),white);
   min-height: 70px;
   padding: 20px;
   color: white;
@@ -20,4 +20,62 @@
 
 h4 {
   font-style: italic;
+}
+.heading{
+  color:rgb(73, 48, 209);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.smallTag{
+  color: gray;
+  padding-bottom: 24px;
+}
+
+.button{
+  font-size: 15px;
+  color: #fcfcfc;
+  background-color: rgb(31, 118, 231);
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.button2{
+  font-size: 20px;
+  color: #fcfcfc;
+  background-color: rgb(31, 118, 231);
+  border: none;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 50px;
+}
+
+.inputSpace, .inputSpaceComments{
+  width: 50px;
+  background: 
+      linear-gradient(#000, #000) center bottom 5px /calc(100% - 10px) 1px no-repeat;
+  background-color: #fcfcfc;
+  border: 1px;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 15px;
+  margin-top: 5px;
+}
+
+.inputSpaceComments{
+  width: 150px;
+}
+
+#list{
+  list-style-type: none;
+  margin-top: 1px;
+  margin-bottom: 50px;
+}
+
+.listComplete{
+  color: rgb(1, 1, 107);
+  padding: 24px;
 }

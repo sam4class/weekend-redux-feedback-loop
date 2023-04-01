@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-
 function Comments(){
 
     const history = useHistory();
@@ -23,12 +22,12 @@ function Comments(){
 
     return(<>
         <div>
-        <h1>Any comments you want to leave?</h1>
+        <h1 class='heading'>Any comments you want to leave?</h1>
         <br />
             <form onSubmit={saveNumber}>
-                <label>Comments</label>
-                <input type='text' value={comments} onChange={(event => setComments(event.target.value))}/>
-                <button type="submit">NEXT</button>
+                <label class='smallTag'>Comments</label>
+                <input class='inputSpaceComments' type='text' value={comments} onChange={(event => setComments(event.target.value))}/>
+                <button class='button' type="submit">NEXT</button>
             </form>
         </div>
     </>)

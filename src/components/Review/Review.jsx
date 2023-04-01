@@ -16,21 +16,21 @@ function Review(){
         console.log('in POST', result)
     }).catch((err) => console.log('error in post', err))
 
-    history.push('/5');
+    history.push('/feedback');
  }
 
     return(<>
         <div>
-        <h1>Review Your Feedback</h1>
+        <h1 class='heading'>Review Your Feedback</h1>
         <br />
-            <ul>
-                <li>Feeling: {number.feeling}</li>
-                <li>Understanding: {number.understanding}</li>
-                <li>Support: {number.support}</li>
-                <li>Comments: {number.comments}</li>
+            <ul id='list'>
+                <li class='listComplete'><em>Feeling:</em> {number.feeling}</li>
+                <li class='listComplete'><em>Understanding:</em> {number.understanding}</li>
+                <li class='listComplete'><em>Support:</em> {number.support}</li>
+                <li class='listComplete'><em>Comments:</em> {number.comments}</li>
             </ul>
         
-        <button onClick={handleSubmit}>SUBMIT</button>
+        <button class='button' onClick={handleSubmit}>SUBMIT</button>
         
         </div>
     </>)

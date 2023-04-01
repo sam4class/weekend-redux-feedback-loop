@@ -42,7 +42,7 @@ function App() {
           <Review />
         </Route>
 
-        <Route path='/5'>
+        <Route path='/feedback'>
           <Feedback />
         </Route>
         

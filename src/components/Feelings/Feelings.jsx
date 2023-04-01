@@ -1,6 +1,9 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { Typography } from '@mui/material';
+import { Button } from '@mui/material';
+import { TextField } from '@mui/material';
 
 
 
@@ -24,12 +27,12 @@ function Feelings(){
 
     return(<>
     <div>
-        <h1>How are you feeling today?</h1>
+        <h1 class='heading'>How are you feeling today?</h1>
         <br />
             <form onSubmit={saveNumber}>
-                <label>Feeling?</label>
-                <input type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />
-                <button type="submit">NEXT</button>
+            <lable class='smallTag'>Feeling? ( 1-5 )</lable>
+                <input class='inputSpace' type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />
+                <button class='button' type="submit" color='primary'>NEXT</button>
             </form>
         </div>
     </>)

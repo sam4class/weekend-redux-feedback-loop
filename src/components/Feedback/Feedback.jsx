@@ -9,10 +9,8 @@ function Feedback(){
     }
 
     return(<>
-        <h1>Feedback!</h1>
-
-        <h2>Thank You!</h2>
-        <button onClick={handleThatClick}>Back to Start</button>
+        <h1 class='heading'>Thank You!</h1>
+        <button class='button2' onClick={handleThatClick}>Leave Another Feedback</button>
     </>)
 }
 
