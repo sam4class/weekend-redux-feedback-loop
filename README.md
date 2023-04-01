@@ -1,10 +1,12 @@
 # Feedback-Loop
 
-The goal was to create a multi-part form that allows users to leave feedback for today. There had to be a differnt view for each question.  While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
+The goal was to create a multi-part form that allows users to leave feedback for today. 
+There had to be a different view for each question.  
+While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
 
-Then a review page needed to show all results and hitting the 'submit' button posts all the information in the database while also giving the user the ablilty to go through the site again.
+The review page needed to show all results and hitting the 'submit' button needed to posts all the results in the database while also giving the user the ablilty to go through the site again.
 
-Create an Admin page that can be obtained by going to the /admin where past results are shown in a table.
+Also, to create an Admin page that can be obtained by going to /admin where past results are shown in a table.
 
 
 ## Prerequisites
