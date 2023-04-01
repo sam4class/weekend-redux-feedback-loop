@@ -1,9 +1,30 @@
-# Project Name
+# Feedback-Loop
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+The goal was to create a multi-part form that allows users to leave feedback for today. There had to be a differnt view for each question.  While there is no nav bar, each part of the form should be at its own route. Clicking next should move the user to the appropriate step in the process.
 
-## Description
+Then a review page needed to show all results and hitting the 'submit' button posts all the information in the database while also giving the user the ablilty to go through the site again.
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Create an Admin page that can be obtained by going to the /admin where past results are shown in a table.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
+## Prerequisites
+<ul>
+    <li>Node.js</li>
+    <li>React.js</li>
+    <li>React.js Redux</li>
+    <li>Express</li>
+    <li>Postico</li>
+</ul>
+
+## Screen Shot
+<img src='public/images/feeling.png' width='300' height='auto'>
+<img src='public/images/admin.png' width='300' height='auto'>
+
+## Installation
+<ol>
+<li>Create a database named "prime_feedback"</li>
+<li>The queries in the tables.sql file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on Postgres, so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries,</li>
+<li>Open up your editor of choice and run an npm install</li>
+<li>Run npm run server in your terminal</li>
+<li>Run npm run client in your terminal</li>
+<li>The npm run client command will open up a new browser tab for you!</li>
