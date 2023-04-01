@@ -23,12 +23,12 @@ function Support(){
 
     return(<>
         <div>
-        <h1 class='heading'>How well are you being supported?</h1>
+        <h1 className='heading'>How well are you being supported?</h1>
         <br />
             <form onSubmit={saveNumber}>
-                <label class='smallTag'>Support? ( 1-5 )</label>
-                <input class='inputSpace' type='number' value={support} min='1' max='5' onChange={(event => setSupport(event.target.value))}/>
-                <button class='button' type="submit">NEXT</button>
+                <label className='smallTag'>Support? ( 1-5 )</label>
+                <input className='inputSpace' type='number' value={support} min='1' max='5' onChange={(event => setSupport(event.target.value))}/>
+                <button className='button' type="submit">NEXT</button>
             </form>
         </div>
     </>)

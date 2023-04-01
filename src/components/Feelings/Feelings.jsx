@@ -27,12 +27,12 @@ function Feelings(){
 
     return(<>
     <div>
-        <h1 class='heading'>How are you feeling today?</h1>
+        <h1 className='heading'>How are you feeling today?</h1>
         <br />
             <form onSubmit={saveNumber}>
-            <lable class='smallTag'>Feeling? ( 1-5 )</lable>
-                <input class='inputSpace' type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />
-                <button class='button' type="submit" color='primary'>NEXT</button>
+            <lable className='smallTag'>Feeling? ( 1-5 )</lable>
+                <input className='inputSpace' type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />
+                <button className='button' type="submit" color='primary'>NEXT</button>
             </form>
         </div>
     </>)

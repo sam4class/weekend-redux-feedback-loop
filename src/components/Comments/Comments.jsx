@@ -22,12 +22,12 @@ function Comments(){
 
     return(<>
         <div>
-        <h1 class='heading'>Any comments you want to leave?</h1>
+        <h1 className='heading'>Any comments you want to leave?</h1>
         <br />
             <form onSubmit={saveNumber}>
-                <label class='smallTag'>Comments</label>
-                <input class='inputSpaceComments' type='text' value={comments} onChange={(event => setComments(event.target.value))}/>
-                <button class='button' type="submit">NEXT</button>
+                <label className='smallTag'>Comments</label>
+                <input className='inputSpaceComments' type='text' value={comments} onChange={(event => setComments(event.target.value))}/>
+                <button className='button' type="submit">NEXT</button>
             </form>
         </div>
     </>)

@@ -9,6 +9,7 @@ import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Feedback from '../Feedback/Feedback';
+import Admin from '../Admin/Admin';
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
           <Feedback />
         </Route>
         
+        <Route path='/admin'>
+          <Admin />
+        </Route>
 
       </Router>
     </div>

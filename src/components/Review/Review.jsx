@@ -21,16 +21,16 @@ function Review(){
 
     return(<>
         <div>
-        <h1 class='heading'>Review Your Feedback</h1>
+        <h1 className='heading'>Review Your Feedback</h1>
         <br />
             <ul id='list'>
-                <li class='listComplete'><em>Feeling:</em> {number.feeling}</li>
-                <li class='listComplete'><em>Understanding:</em> {number.understanding}</li>
-                <li class='listComplete'><em>Support:</em> {number.support}</li>
-                <li class='listComplete'><em>Comments:</em> {number.comments}</li>
+                <li className='listComplete'><em>Feeling:</em> {number.feeling}</li>
+                <li className='listComplete'><em>Understanding:</em> {number.understanding}</li>
+                <li className='listComplete'><em>Support:</em> {number.support}</li>
+                <li className='listComplete'><em>Comments:</em> {number.comments}</li>
             </ul>
         
-        <button class='button' onClick={handleSubmit}>SUBMIT</button>
+        <button className='button' onClick={handleSubmit}>SUBMIT</button>
         
         </div>
     </>)
