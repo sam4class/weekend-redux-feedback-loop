@@ -27,7 +27,7 @@ function Understanding(){
         <br />
             <form onSubmit={saveNumber}>
                 <label>Understanding?</label>
-                <input type='number' value={understanding} onChange={(event => setUnderstanding(event.target.value))}/>
+                <input type='number' value={understanding} min='1' max='5' onChange={(event => setUnderstanding(event.target.value))}/>
                 <button type="submit">NEXT</button>
             </form>
         </div>

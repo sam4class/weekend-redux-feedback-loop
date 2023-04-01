@@ -8,7 +8,7 @@ function Comments(){
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const [comments, setComments] = useState(0)
+    const [comments, setComments] = useState('')
 
     function saveNumber(event){
         event.preventDefault();

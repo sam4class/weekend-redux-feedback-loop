@@ -28,7 +28,7 @@ function Feelings(){
         <br />
             <form onSubmit={saveNumber}>
                 <label>Feeling?</label>
-                <input type='number' value={feeling} onChange={(event => setFeeling(event.target.value))}/>
+                <input type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />
                 <button type="submit">NEXT</button>
             </form>
         </div>

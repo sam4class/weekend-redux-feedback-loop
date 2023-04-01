@@ -27,7 +27,7 @@ function Support(){
         <br />
             <form onSubmit={saveNumber}>
                 <label>Support?</label>
-                <input type='number' value={support} onChange={(event => setSupport(event.target.value))}/>
+                <input type='number' value={support} min='1' max='5' onChange={(event => setSupport(event.target.value))}/>
                 <button type="submit">NEXT</button>
             </form>
         </div>

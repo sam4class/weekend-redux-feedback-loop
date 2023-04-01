@@ -11,8 +11,9 @@ router.post('/', (req, res) => {
     const sqlText = `INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
     VALUES ($1, $2, $3, $4);`
 
-    pool.query(sqlText, [])
+    pool.query(sqlText, [newNumbers.feeling, newNumbers.understanding, newNumbers.support, newNumbers.comments])
     .then((result) => {
+        console.log(result);
         res.sendStatus(201);
     }).catch((err) => {
         console.log('error in query POST', err)
