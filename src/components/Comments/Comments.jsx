@@ -25,7 +25,6 @@ function Comments(){
         <h1 className='heading'>Any comments you want to leave?</h1>
         
         <img className='pic' src='/images/dog.jpeg'/>
-        {/* <img className='pic' src='/images/carTrees.jpeg'/> */}
         {/* <img className='pic' src='/images/sight.jpeg'/> */}
 
             <form onSubmit={saveNumber}>
