@@ -28,7 +28,9 @@ function Feelings(){
     return(<>
     <div>
         <h1 className='heading'>How are you feeling today?</h1>
-        <br />
+        
+        <img className='pic' src='/images/city.jpg'/>
+        
             <form onSubmit={saveNumber}>
             <lable className='smallTag'>Feeling? ( 1-5 )</lable>
                 <input className='inputSpace' type='number' value={feeling} min='1' max='5' onChange={(event => setFeeling(event.target.value))} />

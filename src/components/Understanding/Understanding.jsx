@@ -24,7 +24,9 @@ function Understanding(){
     return(<>
         <div>
         <h1 className='heading'>How well are you understanding the content?</h1>
-        <br />
+        
+        <img class='pic' src='/images/sun.jpeg'/>
+
             <form onSubmit={saveNumber}>
                 <label className='smallTag'>Understanding? ( 1-5 )</label>
                 <input className='inputSpace' type='number' value={understanding} min='1' max='5' onChange={(event => setUnderstanding(event.target.value))}/>

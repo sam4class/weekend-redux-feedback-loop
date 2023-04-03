@@ -12,7 +12,7 @@ function Admin(){
     function handleUpdate(){
         console.log('inside GET')
 
-        axios.get('/api/admin')
+        axios.get('/api')
         .then ((result) => {
         console.log('result in GET', result)
         setFeedbackDetails(result.data)
@@ -21,8 +21,20 @@ function Admin(){
         })
     }
 
+    const deleteFeedback = (id) => {
+        console.log('deleteFeedback', id);
+
+        axios.delete(`/api/delete/${id}`)
+        .then((response) => {
+            handleUpdate();
+        }).catch((err) => {
+            console.log('err in delete Admin', err)
+        })
+    }
+
     return(<>
         <div>
+            <img className='pic2' src="/images/dog.jpeg"/>
             <table>
                 <thead>
                     <tr>
@@ -36,6 +48,7 @@ function Admin(){
                         <td>{detail.understanding}</td>
                         <td>{detail.support}</td>
                         <td>{detail.comments}</td>
+                        <td><button onClick={() => deleteFeedback(detail.id)}>Delete</button></td>
                     </tr>))}
                 </tbody>
             </table>

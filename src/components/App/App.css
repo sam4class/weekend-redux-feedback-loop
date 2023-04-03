@@ -26,6 +26,19 @@ h4 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.pic, .pic1, .pic2{
+  width: 400px;
+  border-radius: 35%;
+}
+.pic1{
+  height: 275px;
+}
+
+.pic2{
+  width: 100px;
+  margin-bottom: 25px;
+}
+
 .smallTag{
   color: gray;
   padding-bottom: 24px;
